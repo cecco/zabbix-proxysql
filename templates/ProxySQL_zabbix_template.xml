@@ -2113,7 +2113,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template App ProxySQL:proxysql[server, {#SERVERNAME}, {#SERVERPORT}, status].regexp(^ONLINE$)}&lt;&gt;0</expression>
+                            <expression>{Template App ProxySQL:proxysql[server, {#SERVERNAME}, {#SERVERPORT}, status].regexp(^ONLINE$)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>Server {#SERVERNAME}:{#SERVERPORT} is DOWN</name>
